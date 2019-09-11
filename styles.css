@@ -1,0 +1,121 @@
+.login-page {
+    width: 100%;
+    height: 100vh;
+}
+
+.left-background {
+    background-color: blueviolet;
+    height: 100vh;
+    width: 100%;
+}
+
+.login-inputs {
+    border-style: none;
+    border-bottom: 1px solid grey;
+    margin-top: 15%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-button {
+    border-style: none;
+    width: 80%;
+    background-color: rgb(41, 37, 44);
+    margin-top: 10%;
+    height: 8vh;
+    color: white;
+    font-weight: bolder;
+}
+
+input::placeholder {
+    
+}
+
+select {
+    border-style: none;
+    border-bottom: 1px solid grey;
+    width: 80%;
+    margin-top: 20%;
+    color: grey;
+    outline: none;
+}
+
+.center {
+    padding-left: 8%;
+}
+
+.rememberme {
+    width: 100%;
+}
+
+.checkbox input {
+    margin-top: 3%;
+    display: inline-block;
+    padding-left: 0 !important;
+    width: 16px;
+    height: 16px;
+    margin-bottom: 0;
+}
+
+.checkboxp {
+    /* padding-top: 10%; */
+    display: inline-block;
+    color: grey;
+    font-size: 1rem;
+}
+
+.forgot-password {
+    padding-left: 198px;
+    font-size: 1rem;
+}
+
+.crm-bg1 {
+    height: 100px;
+    width: 115px;
+    background-color: white;
+    margin-top: 40%;
+    margin-left: 22%;
+    margin-right: 2px;
+    display: inline-block; 
+}
+
+.crm-bg2 {
+    height: 100px;
+    width: 115px;
+    background-color: white;
+    margin-top: 35%;
+    margin-left: 2px;
+    margin-right: 2px;
+    display: inline-block;
+}
+
+.crm-bg2 h1 {
+    color: blueviolet;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 60px;
+}
+
+.crm-bg1 h1 {
+    color: blueviolet;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 60px;
+}
+
+.left-background p {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+.form-check {
+    margin-top: 4%;
+    color: grey;
+} 
