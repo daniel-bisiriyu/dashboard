@@ -43,7 +43,11 @@
     /* height: 100vh; */
     width: 16%;
     background-color: rgb(255, 255, 255);
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 2px 2px 2px #eeeeee;
+    overflow-y: hidden;
+}
+
+.side-bar:hover {
     overflow-y: scroll;
 }
 
@@ -107,6 +111,7 @@
     margin-left: 20px;
     padding-top: 20px;
     font-weight: bold;
+    /* font-size: 0.8rem; */
 }
 
 .first-row1 select {
@@ -148,11 +153,15 @@
     margin-top: 8%;
     border: 1px solid #eeeeee;
     border-radius: 3px;
-    overflow-y: scroll;
+    /* overflow-y: hidden; */
 }
 
+/* .first-row2:hover {
+    overflow-y: scroll;
+} */
+
 .first-row2 p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     color: rgb(100, 100, 100);
     padding-left: 15px;
     padding-right: 15px;
@@ -163,6 +172,7 @@
     color: #595d69;
     padding-left: 15px;
     padding-right: 15px;
+    font-size: 0.7rem;
 }
 
 .third-row1 h5 {
@@ -182,11 +192,13 @@
 .second-row2 h5 {
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 6px;
+    padding-top: 10px;
+    font-size: 1.2rem;
 }
 
 .second-row2 p {
     color: #b3b2b2;
+    font-size: 0.8rem;
 }
 
 .first-row2 hr {
@@ -209,6 +221,10 @@
     margin-top: 5%;
     border: 1px solid #eeeeee;
     border-radius: 3px;
+    overflow-y: hidden;
+}
+
+.second-row2:hover {
     overflow-y: scroll;
 }
 
@@ -294,6 +310,7 @@
   .birthdays {
       margin-top: 10px;
       height: 50px;
+      /* border-left: 1px solid #d6d6d6; */
   }
 
   .birthdays img {
@@ -301,13 +318,13 @@
       height: 35px;
       float: left;
       border-radius: 18px;
-      margin-left: 80px;
+      margin-left: 60px;
   }
 
   .birthdays p {
       font-size: 0.8rem;
       position: relative;
-      margin-left: 90px;
+      margin-left: 100px;
   }
 
   .birthdays small {
@@ -407,7 +424,46 @@
       height: 30px;
       margin: 40px 5px 10px 5px;
   }
+
   .line {
       border: 5px solid black;
       height: 100px;
+  }
+
+  .stars img {
+      height: 15px;
+      width: 15px; 
+  }
+
+  .line {
+      width: 1px;
+      height: 420px;
+      background-color: silver;
+      border-style: none;
+      position: absolute;
+      top: 87px;
+      left: 70px;
+  }
+
+  .line2 {
+    width: 1px;
+    height: 246px;
+    background-color: silver;
+    border-style: none;
+    position: absolute;
+    top: 87px;
+    left: 70px; 
+  }
+
+  input[type="checkbox"] {
+    appearance: none;
+  }
+
+  .checkbox-style {
+      width: 15px;
+      height: 15px;
+      background-color: white;
+      display: inline-block;
+      margin-top: 13px;
+      border-radius: 3px;
   }
