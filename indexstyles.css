@@ -1,38 +1,80 @@
+/* Header styles */
+.navbar {
+    background-color: #414453;
+    width: 85.9%;
+    margin-left: 14.1%;
+}
+
+.navbar-brand {
+    display: none;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-item {
+    margin-left: 5% !important;
+}
+
+.nav-item:first-of-type {
+    color: white !important;
+    /* margin-left: % !important; */
+}
+
 .nav-bar {
     background-color: #414453;
-    height: 20vh;
-    width: 85%;
-    margin-left: 15%;
+    height: 10vh;
+    width: 86%;
+    margin-left: 14%;
 }
 
 .nav-bar label {
     color: white;
-    padding: 55px 20px;
+    margin-top: 1.4rem;
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
 }
 
 .firstlabel {
     margin-left: 50px;
 }
 
-.nav-bar input {
-    border-style: none;
+.checkbox-style {
+    width: 0.6rem;
+    height: 0.6rem;
     background-color: white;
+    display: inline-block;
+    border-radius: 3px;
 }
 
+.nav-bar img {
+    width: 0.9rem;
+    height: 0.9rem;
+    float: right;
+    margin: 0.7rem;
+    margin-top: 1.6rem;
+}
+
+/* side bar styles */
 .profile-picture {
     border-radius: 75px;
-    width: 110px;
-    height: 110px;
+    width: 5rem;
+    height: 5rem;
     display: block;
     float: left;
-    margin-left: 10%;
-    margin-top: 10%;
+    margin-left: 2.5rem;
+    margin-top: 0.5rem;
 }
 
 .hamburger {
-    padding-left: 150px;
-    padding-top: 40px;
+    padding-left: 8.6rem;
+    padding-top: 1.4rem;
     color: white;
+}
+
+.side-bar a:hover {
+    text-decoration: none;
 }
 
 .side-bar {
@@ -40,54 +82,142 @@
     left: 0;
     top: 0;
     bottom: 0;
-    /* height: 100vh; */
-    width: 16%;
+    height: 100vh;
+    width: 14%;
     background-color: rgb(255, 255, 255);
     box-shadow: 2px 2px 2px #eeeeee;
-    overflow-y: hidden;
 }
 
-.side-bar:hover {
-    overflow-y: scroll;
+.side-bar-button {
+    border-style: none;
+    border-radius: 5px;
+    background-color: transparent;
 }
+
+#responsive-side-bar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px #eeeeee;
+    /* display: none; */
+}
+
+.profile-area {
+    height: 35vh;
+    width: 100%;
+    background: url('images/5kproje.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+    
+/* .side-bar:hover {
+    overflow-y: scroll;
+} */
+
+.profile-text p:last-child {
+    font-size: 0.9rem;
+    color: white; 
+    margin-left: 57px; 
+    margin-top: -15px;
+}
+
+.profile-text p:first-child{
+    color: white;
+    font-size: 0.9rem;
+    padding-top: 25px; 
+    margin-left: 40px;
+}
+
 
 .icon1 {
-    margin-top: 40px;
+    margin-top: 0;
     background-color: #eeeeee;
     height: 10vh;
     padding-top: 15px;
 }
 
 .icons {
-    margin-top: 40px;
+    margin-top: 0.5rem;
+}
+
+.icons:hover {
+    background-color: #222222 !important;
 }
 
 .icon1 img {
     float: left;
-    width: 35px;
-    height: 35px;
+    width: 1.7rem;
+    height: 1.7rem;
     margin-left: 20px;
+    margin-top: 0.2rem;
 }
 
 .icons img {
     float: left;
-    width: 35px;
-    height: 35px;
-    margin-left: 20px;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1.2rem;
 }
 
 .icon1 p {
-    font-size: 16px;
+    font-size: 0.9rem;
     color: #595d69;
-    padding-top: 8px;
+    padding-top: 0.2rem;
     margin-left: 60px;
 }
 
 .icons p {
-    font-size: 16px;
+    font-size: 0.9rem;
     color: #595d69;
-    padding-top: 8px;
+    padding-top: 0.2rem;
     margin-left: 60px;
+}
+
+/* dashboard area */
+.dashboard-button {
+    width: 10rem;
+    height: 3rem;
+    background-color: #8486ea;
+    margin-left: 11rem;
+    margin-top: 5%;
+    border-radius: 5px;
+}
+
+.dashboard-button img {
+    float: left;
+    margin-top: 1rem;
+    margin-left: 20px;
+    width: 1.2rem;
+    height: 1.2rem; 
+}
+
+.dashboard-button p {
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-top: 13px;
+    padding-left: 3.5rem;
+}
+
+.images img {
+    float: right;
+    width: 1.1rem;
+    height: 1.1rem;
+    margin: 2.75rem 0.3125rem 0.65rem 0.8rem;
+}
+
+/* Main dashboard area */
+.main-dashboard-area {
+    width: 86%;
+    height: 100vh;
+    /* background-color: #222222; */
+    margin-left: 14%;
 }
 
 .dashboard-row {
@@ -96,29 +226,35 @@
     position: relative;
 }
 
+.empty-row {
+    width: 80% !important;
+}
+
 .first-row1 {
     width: 100%;
-    height: 48vh;
+    height: 40vh;
     /* box-shadow: 2px 2px 5px black; */
-    border: 1px solid #eeeeee;
+    border: 1px solid #d6d6d6;
     border-radius: 3px;
     /* position: relative; */
 }
 
-.first-row1 h5 {
-    display: inline-block;
-    color: #414352;
-    margin-left: 20px;
-    padding-top: 20px;
-    font-weight: bold;
-    /* font-size: 0.8rem; */
+.first-row2 {
+    width: 100%;
+    height: 40vh;
+    /* box-shadow: 2px 2px 5px black; */
+    margin-top: 8%;
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    /* overflow-y: hidden; */
 }
 
-.first-row1 select {
-    border-style: none;
-    display: inline-block;
-    margin-left: 35%;
-    color: #97979f;
+.second-row1 {
+    width: 100%;
+    height: 40vh;
+    /* box-shadow: 2px 2px 5px black; */
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
 }
 
 .second-row1 h5 {
@@ -132,28 +268,56 @@
 .second-row1 select {
     border-style: none;
     display: inline-block;
-    margin-left: 40%;
+    margin-left: 10rem;
     color: #97979f;
 }
 
 .second-row1 img {
+    /* width: 100%;
+    height: 100%; */
     margin-top: 10%;
     margin-left: 8%;
 }
 
-.first-row1 img {
-    margin-top: 10%;
-    margin-left: 5%;
+.second-row2 {
+    width: 100%;
+    height: 40vh;
+    /* box-shadow: 2px 2px 5px black; */
+    margin-top: 5%;
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    overflow-y: hidden;
 }
 
-.first-row2 {
+.third-row1 {
     width: 100%;
-    height: 48vh;
+    height: 83vh;
     /* box-shadow: 2px 2px 5px black; */
-    margin-top: 8%;
-    border: 1px solid #eeeeee;
+    border: 1px solid #d6d6d6;
     border-radius: 3px;
-    /* overflow-y: hidden; */
+    overflow-y: scroll;
+}
+
+.first-row1 h5 {
+    display: inline-block;
+    color: #414352;
+    margin-left: 1.2rem;
+    padding-top: 1.2rem;
+    font-weight: bold;
+    /* font-size: 0.8rem; */
+}
+
+.first-row1 select {
+    border-style: none;
+    display: inline-block;
+    margin-left: 11em;
+    color: #97979f;
+    font-size: 0.9rem;
+}
+
+.first-row1 img {
+    /* margin-top: 10%; */
+    margin-left: 10%;
 }
 
 /* .first-row2:hover {
@@ -206,34 +370,8 @@
     margin-right: 15px;
 }
 
-.second-row1 {
-    width: 100%;
-    height: 48vh;
-    /* box-shadow: 2px 2px 5px black; */
-    border: 1px solid #eeeeee;
-    border-radius: 3px;
-}
-
-.second-row2 {
-    width: 100%;
-    height: 48vh;
-    /* box-shadow: 2px 2px 5px black; */
-    margin-top: 5%;
-    border: 1px solid #eeeeee;
-    border-radius: 3px;
-    overflow-y: hidden;
-}
-
 .second-row2:hover {
     overflow-y: scroll;
-}
-
-.third-row1 {
-    width: 100%;
-    height: 100vh;
-    /* box-shadow: 2px 2px 5px black; */
-    border: 1px solid #eeeeee;
-    border-radius: 3px;
 }
 
 /* .third-row2 {
@@ -247,8 +385,8 @@
     margin-bottom: 0px;
 }
 
-.top-selling-products-row {
-}
+/* .top-selling-products-row {
+} */
 
 /* width */
 .second-row2::-webkit-scrollbar {
@@ -353,7 +491,7 @@
 
   /* width */
 .side-bar::-webkit-scrollbar {
-    width: 6px;
+    width: 10px;
   }
   
   /* Track */
@@ -371,58 +509,11 @@
     background: #555; 
   }
 
-  .dashboard-button {
-      width: 200px;
-      height: 60px;
-      background-color: #8486ea;
-      margin-left: 97px;
-      margin-top: 5%;
-      border-radius: 5px;
-  }
-
-  .dashboard-button img {
-      float: left;
-      margin-top: 7px;
-      margin-left: 14px;
-  }
-
-  .dashboard-button p {
-      color: white;
-      font-weight: bold;
-      font-size: 1.2rem;
-      padding-top: 13px;
-      padding-left: 80px;
-  }
-
   .nav-icons img {
       float: right;
       background-color: orange;
       width: 200;
       height: 200;
-  }
-
-  .profile-area {
-      height: 50vh;
-      width: 100%;
-      background: url('images/5kproje.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-
-  }
-
-  .nav-bar img {
-      width: 20px;
-      height: 20px;
-      float: right;
-      margin: 10px;
-      margin-top: 60px;
-  }
-
-  .images img {
-      float: right;
-      width: 30px;
-      height: 30px;
-      margin: 40px 5px 10px 5px;
   }
 
   .line {
@@ -459,11 +550,4 @@
     appearance: none;
   }
 
-  .checkbox-style {
-      width: 15px;
-      height: 15px;
-      background-color: white;
-      display: inline-block;
-      margin-top: 13px;
-      border-radius: 3px;
-  }
+  

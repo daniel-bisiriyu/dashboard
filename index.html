@@ -8,9 +8,43 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="indexstyles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <section>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#"> <button class="side-bar-button" onclick="showSideBar()">&#9776;</button></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><span><div class="checkbox-style"></div></span> Production <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Purchase</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Inventory</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">WMS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CRM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">More</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- <section>
         <nav class="nav-bar">
             <form>
                 <label class="firstlabel"><span><div class="checkbox-style"></div></span> Production </label>
@@ -23,21 +57,72 @@
                 <img src="images/menu.svg" alt="">
                 <img src="images/notification (1).svg" alt="">
                 <img src="images/search.svg" alt="">
-            </form>
-            <!-- <div class="nav-icons">
-                <img src="images/search.svg" alt="" width="30" height="30"><p>bbbbbbbbbbbbbbb</p>
-                <img src="images/notification (1).svg" alt="" width="30" height="30">
-                <img src="images/menu.svg" alt="" width="30" height="30">
-            </div> -->
-            
+            </form>           
         </nav>
-    </section>
+    </section> -->
+    <!-- end of nav-bar -->
+
+    <!-- idebar area -->
+    <div id="responsive-side-bar">
+        <div>
+            <div class="profile-area">
+                <img src="images/man.jpg" alt="" class="profile-picture">
+                <h3 class="hamburger" onclick="closeNav()">X</h3>
+                <div class="profile-text">
+                    <p>Lorem ipsum</p>
+                    <p>Nigeria</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row icon1">
+                    <div class="col-md-12">
+                        <img src="images/speedometer-counter.svg" alt="">
+                        <p>Dashboard</p>
+                    </div>
+                </div>
+                <div class="row icons">
+                    <div class="col-md-12">
+                        <img src="images/calendar1.svg" alt="">
+                        <p>Calendar</p>
+                    </div>
+                </div>
+                <div class="row icons">
+                    <div class="col-md-12">
+                        <img src="images/pie-chart (1).svg" alt="">
+                        <p>Project report</p>
+                    </div>
+                </div>
+                <div class="row icons">
+                    <div class="col-md-12">
+                        <img src="images/folder (1).svg" alt="">
+                        <p>Collection</p>
+                    </div>
+                </div>
+                <div class="row icons">
+                    <div class="col-md-12">
+                        <img src="images/speech-bubble-with-text-lines.svg" alt="">
+                        <p>Feedback</p>
+                    </div>
+                </div>
+                <div class="row icons">
+                    <div class="col-md-12">
+                        <img src="images/star (1).svg" alt="">
+                        <p>Call Rating</p>
+                    </div>
+                </div>
+            </div>
+            <br> <br> <br>
+        </div>
+    </div>
+
     <div class="side-bar">
         <div class="profile-area">
             <img src="images/man.jpg" alt="" class="profile-picture">
             <a href="login.html"><h1 class="hamburger">&#9776;</h1></a>
-            <p style="color: white; padding-top: 40px; margin-left: 35px;">Lorem ipsum</p>
-            <p style="color: white; margin-left: 50px;">Nigeria</p>
+            <div class="profile-text">
+                <p>Lorem ipsum</p>
+                <p>Nigeria</p>
+            </div>
         </div>
         <div class="container">
             <div class="row icon1">
@@ -78,21 +163,21 @@
             </div>
         </div>
         <br> <br> <br>
-        </div>
     </div>
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
+    <!-- end of idebar area -->
+
+    <div class="container-fluid">
+        <div class="row dashboard-responsive">
+            <div class="col-md-6 col-sm-6">
                 <div class="dashboard-button">
-                    <img src="images/calendar (1).svg" alt="" width="40" height="40">
+                    <img src="images/calendar (1).svg" alt="">
                     <p>Dashboard</p>
                 </div>
             </div>
             <div class="col-md-2">
 
             </div>
-            <div class="col-md-4 images">  
+            <div class="col-md-4 images col-sm-6">  
                 <img src="images/resume.svg" alt="">
                 <img src="images/notes.svg" alt="">
                 <img src="images/sports-car.svg" alt="">
@@ -103,116 +188,116 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row dashboard-row">
-            <div class="col-md-2">
+    <!-- Main dahboard area -->
 
-            </div>
-            <div class="col-md-3">
-                <div class="first-row1 shadow">
-                    <h5>Sale</h5>
-                    <select>
-                        <option>This Month</option>
-                        <option>Last Month</option>
-                    </select>
-                    <img src="images/betapiechart.PNG" alt="">
-                </div>
-                <div class="first-row2 shadow stars">
-                    <div>  
-                        <h5>Latest Ratings and Reviews</h5>
-                        <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="15" height="15" style="float: right; margin-right: 20px;">
-                        <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="15" height="15" style="float: right;">
-                        <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="15" height="15" style="float: right;">
-                        <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="15" height="15" style="float: right;">
-                        <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="15" height="15" style="float: right;">
-                        <h6>1. Mr. John James</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, dolorem porro, illo ratione</p>
-                        <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="15" height="15" style="float: right; margin-top: 12px; margin-right: 20px;">
-                        <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="15" height="20" style="float: right; margin-top: 12px;">
-                        <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="20" height="20" style="float: right; margin-top: 12px;">
-                        <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="20" height="20" style="float: right; margin-top: 12px;">
-                        <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="20" height="20" style="float: right; margin-top: 12px;">
-                        <hr>   
+    <div class="main-dashboard-area">
+        <div class="container-fluid">
+            <div class="row dashboard-row">
+                <div class="col-md-4 col-sm-5">
+                    <div class="first-row1">
+                        <h5>Sale</h5>
+                        <select>
+                            <option>This Month</option>
+                            <option>Last Month</option>
+                        </select>
+                        <img src="images/betapiechart.PNG" alt="">
                     </div>
-                    <div>
-                        <h6>2. Mr. John James</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, dolorem porro, illo ratione</p>
-                        <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="20" height="20" style="float: right; margin-top: 12px; margin-right: 20px;">
-                        <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="20" height="20" style="float: right; margin-top: 12px;">
-                        <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="20" height="20" style="float: right; margin-top: 12px;">
-                        <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="20" height="20" style="float: right; margin-top: 12px;">
-                        <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="20" height="20" style="float: right; margin-top: 12px;">
-                        <hr>
+                    <div class="first-row2 stars">
+                        <div>  
+                            <h5>Latest Ratings and Reviews</h5>
+                            <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="15" height="15" style="float: right; margin-right: 20px;">
+                            <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="15" height="15" style="float: right;">
+                            <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="15" height="15" style="float: right;">
+                            <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="15" height="15" style="float: right;">
+                            <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="15" height="15" style="float: right;">
+                            <h6>1. Mr. John James</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, dolorem porro, illo ratione</p>
+                            <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="15" height="15" style="float: right; margin-top: 12px; margin-right: 20px;">
+                            <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="15" height="20" style="float: right; margin-top: 12px;">
+                            <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="20" height="20" style="float: right; margin-top: 12px;">
+                            <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="20" height="20" style="float: right; margin-top: 12px;">
+                            <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="20" height="20" style="float: right; margin-top: 12px;">
+                            <hr>   
+                        </div>
+                        <div>
+                            <h6>2. Mr. John James</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, dolorem porro, illo ratione</p>
+                            <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="20" height="20" style="float: right; margin-top: 12px; margin-right: 20px;">
+                            <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="20" height="20" style="float: right; margin-top: 12px;">
+                            <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="20" height="20" style="float: right; margin-top: 12px;">
+                            <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="20" height="20" style="float: right; margin-top: 12px;">
+                            <img src="images/star-in-black-of-five-points-shape.svg" alt="" width="20" height="20" style="float: right; margin-top: 12px;">
+                            <hr>
+                        </div>
+                        <div>
+                            <h6>3. Mr. John James</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, dolorem porro, illo ratione</p>
+                            <hr>
+                        </div>
+    
                     </div>
-                    <div>
-                        <h6>3. Mr. John James</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, dolorem porro, illo ratione</p>
-                        <hr>
+                </div>
+                <div class="col-md-5">
+                    <div class="second-row1">
+                        <h5>Payments</h5>
+                        <select>
+                            <option>This Month</option>
+                            <option>Last Month</option>
+                        </select>
+                        <img src="images/alternatebarchart.PNG" alt="" class="text-center">
                     </div>
-
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="second-row1 shadow">
-                    <h5>Payments</h5>
-                    <select>
-                        <option>This Month</option>
-                        <option>Last Month</option>
-                    </select>
-                    <img src="images/alternatebarchart.PNG" alt="" class="text-center">
-                </div>
-                <div class="second-row2 shadow">
-                    <h5>Top Selling Products</h5>
-                    <div class="container">
-                        <div class="row top-selling-products-row">
-                            <div class="col-md-8">
-                                <p>1. Product name here</p>
+                    <div class="second-row2">
+                        <h5>Top Selling Products</h5>
+                        <div class="container">
+                            <div class="row top-selling-products-row">
+                                <div class="col-md-8 col-xs-5">
+                                    <p>1. Product name here</p>
+                                </div>
+                                <div class="col-md-2 col-xs-5">
+                                    <p>15</p>
+                                </div>
+                                <div class="col-md-2 col-xs-2">
+                                    <p>1499</p>
+                                </div>
                             </div>
-                            <div class="col-md-2">
-                                <p>15</p>
+                            <hr>
+                            <div class="row top-selling-products-row">
+                                <div class="col-md-8 ">
+                                    <p>2. Product name here</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>15</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>1499</p>
+                                </div>
                             </div>
-                            <div class="col-md-2">
-                                <p>1499</p>
+                            <hr>
+                            <div class="row top-selling-products-row">
+                                <div class="col-md-8">
+                                    <p>3. Product name here</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>15</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>1499</p>
+                                </div>
                             </div>
-                        </div>
-                        <hr>
-                        <div class="row top-selling-products-row">
-                            <div class="col-md-8">
-                                <p>2. Product name here</p>
+                            <hr>
+                            <div class="row top-selling-products-row">
+                                <div class="col-md-8">
+                                    <p>4. Product name here</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>15</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>1499</p>
+                                </div>
                             </div>
-                            <div class="col-md-2">
-                                <p>15</p>
-                            </div>
-                            <div class="col-md-2">
-                                <p>1499</p>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row top-selling-products-row">
-                            <div class="col-md-8">
-                                <p>3. Product name here</p>
-                            </div>
-                            <div class="col-md-2">
-                                <p>15</p>
-                            </div>
-                            <div class="col-md-2">
-                                <p>1499</p>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row top-selling-products-row">
-                            <div class="col-md-8">
-                                <p>4. Product name here</p>
-                            </div>
-                            <div class="col-md-2">
-                                <p>15</p>
-                            </div>
-                            <div class="col-md-2">
-                                <p>1499</p>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row top-selling-products-row">
+                            <hr>
+                            <div class="row top-selling-products-row">
                             <div class="col-md-8">
                                 <p>5. Product name here</p>
                             </div>
@@ -222,158 +307,159 @@
                             <div class="col-md-2">
                                 <p>1499</p>
                             </div>
+                                </div>
+                                <hr>
+                                <div class="row top-selling-products-row">
+                                    <div class="col-md-8">
+                                        <p>6. Product name here</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>15</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>1499</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row top-selling-products-row">
+                                    <div class="col-md-8">
+                                        <p>6. Product name here</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>15</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>1499</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row top-selling-products-row">
+                                    <div class="col-md-8">
+                                        <p>6. Product name here</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>15</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>1499</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row top-selling-products-row">
+                                    <div class="col-md-8">
+                                        <p>6. Product name here</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>15</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>1499</p>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
                         </div>
-                        <hr>
-                        <div class="row top-selling-products-row">
-                            <div class="col-md-8">
-                                <p>6. Product name here</p>
-                            </div>
-                            <div class="col-md-2">
-                                <p>15</p>
-                            </div>
-                            <div class="col-md-2">
-                                <p>1499</p>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row top-selling-products-row">
-                            <div class="col-md-8">
-                                <p>6. Product name here</p>
-                            </div>
-                            <div class="col-md-2">
-                                <p>15</p>
-                            </div>
-                            <div class="col-md-2">
-                                <p>1499</p>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row top-selling-products-row">
-                            <div class="col-md-8">
-                                <p>6. Product name here</p>
-                            </div>
-                            <div class="col-md-2">
-                                <p>15</p>
-                            </div>
-                            <div class="col-md-2">
-                                <p>1499</p>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row top-selling-products-row">
-                            <div class="col-md-8">
-                                <p>6. Product name here</p>
-                            </div>
-                            <div class="col-md-2">
-                                <p>15</p>
-                            </div>
-                            <div class="col-md-2">
-                                <p>1499</p>
-                            </div>
-                        </div>
-                        <hr>
                     </div>
+                    <div class="col-md-3">
+                        <div class="third-row1">
+                            <div class="line">
+        
+                            </div>
+                            <h5>Activities</h5>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 crown-img">
+                                        <img src="images/crown.svg" alt="">
+                                        <p>Birthdays</p>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row birthdays">
+                                            <div class="col-md-12">
+                                                <img src="images/whitewoman.jpg" alt="">
+                                                <p>Shilpa Rao <small>Today</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row birthdays">
+                                            <div class="col-md-12">
+                                                <img src="images/whitewoman.jpg" alt="">
+                                                <p>Prajakta Patil <small>Today</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row birthdays">
+                                            <div class="col-md-12">
+                                                <img src="images/whitewoman.jpg" alt="">
+                                                <p>Prajakta Patil <small>Today</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row birthdays">
+                                            <div class="col-md-12">
+                                                <img src="images/whitewoman.jpg" alt="">
+                                                <p>Shilpa Rao <small>Today</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 crown-img">
+                                        <img src="images/workers.svg" alt="">
+                                        <p>Meetings</p>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="line2">
+        
+                                        </div>
+                                        <div class="col-md-12 tick">
+                                            <img src="images/tick.svg" alt="">
+                                            <p>Sales team meeting <span class="ten-am">by 10:00am</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 tick">
+                                            <img src="images/tick.svg" alt="">
+                                            <p>Sales team meeting <span class="ten-am">by 10:00am</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 tick">
+                                            <img src="images/tick.svg" alt="">
+                                            <p>Sales team meeting <span class="ten-am">by 10:00am</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 tick">
+                                            <img src="images/tick.svg" alt="">
+                                            <p>Sales team meeting <span class="ten-am">by 10:00am</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 crown-img">
+                                        <img src="images/notification.svg" alt="">
+                                        <p>Notifications</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="third-row1 shadow">
-                    <div class="line">
-
-                    </div>
-                    <h5>Activities</h5>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 crown-img">
-                                <img src="images/crown.svg" alt="">
-                                <p>Birthdays</p>
-                            </div>
-                            <div class="container">
-                                <div class="row birthdays">
-                                    <div class="col-md-12">
-                                        <img src="images/whitewoman.jpg" alt="">
-                                        <p>Shilpa Rao <small>Today</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container">
-                                <div class="row birthdays">
-                                    <div class="col-md-12">
-                                        <img src="images/whitewoman.jpg" alt="">
-                                        <p>Prajakta Patil <small>Today</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container">
-                                <div class="row birthdays">
-                                    <div class="col-md-12">
-                                        <img src="images/whitewoman.jpg" alt="">
-                                        <p>Prajakta Patil <small>Today</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container">
-                                <div class="row birthdays">
-                                    <div class="col-md-12">
-                                        <img src="images/whitewoman.jpg" alt="">
-                                        <p>Shilpa Rao <small>Today</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 crown-img">
-                                <img src="images/workers.svg" alt="">
-                                <p>Meetings</p>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="line2">
-
-                                </div>
-                                <div class="col-md-12 tick">
-                                    <img src="images/tick.svg" alt="">
-                                    <p>Sales team meeting <span class="ten-am">by 10:00am</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12 tick">
-                                    <img src="images/tick.svg" alt="">
-                                    <p>Sales team meeting <span class="ten-am">by 10:00am</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12 tick">
-                                    <img src="images/tick.svg" alt="">
-                                    <p>Sales team meeting <span class="ten-am">by 10:00am</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12 tick">
-                                    <img src="images/tick.svg" alt="">
-                                    <p>Sales team meeting <span class="ten-am">by 10:00am</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 crown-img">
-                                <img src="images/notification.svg" alt="">
-                                <p>Notifications</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> 
         </div>
-        <br>
-        <br>
-    </div>
+
+    
 
     <!-- <hr class="line"> -->
     
@@ -381,12 +467,17 @@
 
 
 
+    <script>
+        function showSideBar() {
+            document.getElementById('responsive-side-bar').style.width = '180px';
+        }
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41
-    JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha38
-    4-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha38
-    4-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        function closeNav() {
+            document.getElementById('responsive-side-bar').style.width = '0px';
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
